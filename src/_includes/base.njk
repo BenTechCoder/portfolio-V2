@@ -3,15 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<title>{{ title }}</title>
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
 </head>
+<nav class = "nav">
+<ul class="nav-bar" role="list">
+<li class="nav-items"><a href="./">Home</a></li>
+<li class="nav-items"><a href="#projects">Projects</a></li>
+<li class="nav-items"><a href="#about">About</a></li>
+<li class="nav-items"><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
 <body>
-	<header>
-		<h1>{{ title }}</h1>
-	</header>
 	<main>
 	{{ content | safe }}
 	</main>
 </body>
+<footer>
+
+
+
+</footer>
+
 </html>

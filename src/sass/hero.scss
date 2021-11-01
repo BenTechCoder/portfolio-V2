@@ -1,0 +1,33 @@
+@import "global";
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $accent-3;
+  background-image: url("/assets/general-assets/Animated-Shape.svg");
+  background-size: cover;
+  background-color: $primary-2;
+}
+
+.hero-img {
+  width: 40%;
+}
+ @media (max-width: 500px) {
+     .hero-img {
+         width: 80%;
+     }
+ }
+
+ .hero__text {
+   text-align: center;
+  font-size: clamp(1.5rem, 2vw, 5rem);
+   margin: 0 auto;
+   padding: 1rem;
+ }
+
+ #hero-span {
+   font-size: clamp(3rem, 4vw, 6rem);
+     color: $primary-1;
+font-family: $Yellowtail;
+ }

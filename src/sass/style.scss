@@ -1,7 +1,9 @@
+@import "global";
 @import "reset";
 @import "nav";
+@import "hero";
 
 body {
-  font-family: sans-serif;
+  font-family: $Roboto;
   background-color: #E9EDC9;
 }

@@ -1,5 +1,7 @@
+@import "global";
+
 .footer-container {
-padding: 1rem;
+padding: 0.5rem;
 margin-top: auto;
     background-color: $accent-3;
     max-width: 100%;
@@ -8,14 +10,30 @@ margin-top: auto;
 }
 
 .footer-items {
-    margin: 0 auto;
-max-width: 90%;   
-  
+    text-align: center;
 }
 
-.footer-icon-container {
-    display: flex;
-flex-direction: column;
+.icon-list {
+    padding-top: 1rem;
+display: flex;
+justify-content: center;
 gap: 1rem;
 
 }
+.icon {
+    transition: transform 0.3s ease-out;
+}
+.icon:hover {
+    transform: translateY(8px);
+}
+
+
+
+@media(hover: hover) and (pointer: fine) {
+  
+    
+     .icon:hover {
+        transform: translateY(8px);
+    }
+}
+

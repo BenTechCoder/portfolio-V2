@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- ADD SEO VIA FRONT MATTER -->
-	<title>{{ title }}</title>
-	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon//favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon//favicon-16x16.png">
-<link rel="manifest" href="assets/favicon/site.webmanifest">
-</head>
-<nav class = "nav">
-<ul class="nav-bar" role="list">
-<li class="nav-items"><a href="./">Home</a></li>
-<li class="nav-items"><a href="#projects">Projects</a></li>
-<li class="nav-items"><a href="#about">About</a></li>
-<li class="nav-items"><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ADD SEO VIA FRONT MATTER -->
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+  </head>
+  <nav class="nav">
+    <ul class="nav-bar" role="list">
+      <li class="nav-items"><a href="./">Home</a></li>
+      <li class="nav-items"><a href="#projects">Projects</a></li>
+      <li class="nav-items"><a href="#about">About</a></li>
+      <li class="nav-items"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<body>
-	<main>
-	{{ content | safe }}
-	</main>
-</body>
-<footer>
+  <body>
+    <main>
+      {{ content | safe }}
+    </main>
 
+	<footer class="footer-container">
+		<div class="credit">
+		  Icons made by
+		  <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+		  <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+		</div>
+		<div class="footer-items">
+			<h3>Find me on:</h3>
+	
+			<div class="footer-icon-container">
+				
+				<div class="icon-list">
+					<a href="https://github.com/BenTechCoder" target="_blank">
+						<img src="assets/icons/github.svg" alt="Github link">
+					</a>
+		
+				</div>
+			</div>	
+		</div>
 
-
-</footer>
-
+	
+	  </footer>
+  </body>
+ 
 </html>

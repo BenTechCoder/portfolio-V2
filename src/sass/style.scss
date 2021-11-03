@@ -2,8 +2,20 @@
 @import "reset";
 @import "nav";
 @import "hero";
+@import "footer";
+
 
 body {
   font-family: $Roboto;
   background-color: #E9EDC9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional */
+
+
+.credit {
+  display: none;
 }

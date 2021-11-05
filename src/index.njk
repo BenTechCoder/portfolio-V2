@@ -12,10 +12,18 @@ title: Benjamin Lebron Web Development
     <h3>Your Friendly Neighborhood Web Dev</h3>
   </div>
 </section>
+<section class="portfolio-snippet">
+  <div class="hero__text">
+    <h2>I make Amazing Websites <p class="down-arrow">&darr;</p></h2>
+  
 
-{% for portfolioitem in collections.portfolioitem %}
-  {% include "portfolio-snippet.njk" %} 
-{% endfor %}
+  </div>
+  {% for portfolioitem in collections.portfolioitem %}
+    {% include "portfolio-snippet.njk" %} 
+  {% endfor %}
+  
 
+</p>
 
+</section> 
 

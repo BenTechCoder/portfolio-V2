@@ -9,13 +9,13 @@ title: Benjamin Lebron Web Development
   </div>
   <div class="hero__text">
     <h2>Hello There 👋 I'm <span id="hero-span">Ben</span></h2>
-<h3>Your Friendly Neighborhood Web Dev</h3> 
-</div>
-
+    <h3>Your Friendly Neighborhood Web Dev</h3>
+  </div>
 </section>
 
-<h1>hello</h1>
+{% for portfolioitem in collections.portfolioitem %}
+  {% include "portfolio-snippet.njk" %} 
+{% endfor %}
 
-  <!-- {%- for portfolio-item in collections.portfolio -%}
-  {% include "portfolio-snippet.njk" %}
- {%- endfor %} -->
+
+

@@ -1,11 +1,12 @@
 <div class="portfolioItem">
-  <h3> {{ portfolioitem.data.title }} </h3>
+  <h2> {{ portfolioitem.data.title }} </h2>
     <div class="img-cover">
    <img src="{{ portfolioitem.data.image }}" alt="{{ portfolioitem.data.img-caption }}">
     </div>
-     <p>{{ portfolioitem.data.description }}</p>
-   <div class="btns-area">
-     <a href="{{ portfolioitem.data.source }}" class="portfolio-btns">Source</a>
-     <a href="{{ portfolioitem.data.demo }}" class="portfolio-btns">Demo</a>
+     <h4>{{ portfolioitem.data.description }}</h4>
+   <div class="btn-area">
+     <a href="{{ portfolioitem.data.demo }}" class="portfolio-btns"> <img src="\assets\icons\github.svg" alt="Github Link"> Source</a>
+     <a href="{{ portfolioitem.data.source }}" class="portfolio-btns"><img src="\assets\icons\global.svg" alt="Live Site Link">Live site</a>
    </div>
      </div>
+   

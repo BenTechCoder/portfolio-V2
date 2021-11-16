@@ -1,9 +1,9 @@
 <div class="portfolioItem">
-  <h2> {{ portfolioitem.data.title }} </h2>
+<a href="{{portfolioitem.data.source}}">  <h2> {{ portfolioitem.data.title }} </h2></a>
     <div class="img-cover">
    <img src="{{ portfolioitem.data.image }}" alt="{{ portfolioitem.data.img-caption }}">
     </div>
-     <h4>{{ portfolioitem.data.description }}</h4>
+     <p>{{ portfolioitem.data.description }}</p>
    <div class="btn-area">
      <a href="{{ portfolioitem.data.demo }}" class="portfolio-btns"> <img src="\assets\icons\github.svg" alt="Github Link"> Source</a>
      <a href="{{ portfolioitem.data.source }}" class="portfolio-btns"><img src="\assets\icons\global.svg" alt="Live Site Link">Live site</a>

@@ -9,8 +9,8 @@
 
 
 body {
-  font-family: $Roboto;
-  background-color: #E9EDC9;
+  font-family: $body-font;
+  background-color: $primary-1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

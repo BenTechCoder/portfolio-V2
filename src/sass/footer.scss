@@ -1,39 +1,32 @@
 @import "global";
 
 .footer-container {
-padding: 0.5rem;
-margin-top: auto;
-    background-color: $accent-3;
-    max-width: 100%;
-    font-weight: 700;
-   
+  padding: 0.5rem;
+  margin-top: auto;
+  background-color: $primary-2;
+  max-width: 100%;
+  font-weight: 700;
 }
 
 .footer-items {
-    text-align: center;
+  text-align: center;
 }
 
 .icon-list {
-    padding-top: 1rem;
-display: flex;
-justify-content: center;
-gap: 1rem;
-
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 .icon {
-    transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
 }
 .icon:hover {
+  transform: translateY(8px);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .icon:hover {
     transform: translateY(8px);
+  }
 }
-
-
-
-@media(hover: hover) and (pointer: fine) {
-  
-    
-     .icon:hover {
-        transform: translateY(8px);
-    }
-}
-

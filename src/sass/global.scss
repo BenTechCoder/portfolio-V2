@@ -1,9 +1,83 @@
+// @font-face {
+//     font-family: "body";
+//     src: url("\assets\fonts\Atkinson-Hyperlegible-Regular-102.woff") format('woff');
+// }
+
+// @font-face {
+//     font-family: "body";
+//     src: url("assets\fonts\Atkinson-Hyperlegible-Bold-102.woff") format('woff');
+//     font-weight: bold;
+// }
+
+// @font-face {
+//     font-family: "body";
+//     src: url("assets\fonts\Atkinson-Hyperlegible-Bolditalic-102.woff") format('woff');
+//     font-weight: bold;
+//     font-style: italic;
+// }
+
+// @font-face {
+//     font-family: "body";
+//     src: url("assets\fonts\Atkinson-Hyperlegible-Italic-102.woff") format('woff');
+//     font-style: italic;
+// }
+
+@font-face {
+    font-family: 'webfontregular';
+    src: url('assets/fonts/atkinson-hyperlegible-italic-102-webfont.woff2') format('woff2'),
+         url('assets/fonts/atkinson-hyperlegible-italic-102-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'webfontregular';
+    src: url('assets/fonts/atkinson-hyperlegible-bolditalic-102-webfont.woff2') format('woff2'),
+         url('assets/fonts/atkinson-hyperlegible-bolditalic-102-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'webfontregular';
+    src: url('assets/fonts/atkinson-hyperlegible-regular-102-webfont.woff2') format('woff2'),
+         url('assets/fonts/atkinson-hyperlegible-regular-102-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,700&family=Yellowtail&display=swap');
-$Roboto: 'Roboto', monospace;
+$heading-font: 'Roboto', monospace;
+$body-font: "webfontregular", monospace;
 $Yellowtail: 'Yellowtail', sans-serif;
 
-$primary-1: #ccd5aeff;
-$accent-1: #e9edc9ff;
-$accent-2: #fefae0ff;
-$accent-3: #faedcdff;
-$primary-2: #d4a373ff;
+$primary-1: #fffffe;
+$header: #094067;
+$text: #5f6c7b;
+$link-1: #ef4565;
+$link-2:#3da9fc;
+$btn-1: #3da9fc;
+$btn-text-1: #fffffe;
+$btn-2: #ef4565;
+$btn-text-2: #fffffe;
+$primary-2: #d8eefe;
+
+p {
+    color: $text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    color: $header;
+}

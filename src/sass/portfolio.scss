@@ -27,12 +27,10 @@
 .portfolio-snippet {
     font-weight: 700;
   text-align: center;
-  margin: 0 auto;
-  width: 90%;
-  max-width: 2000px;
+  background-color: $primary-2;
   color: $primary-2;
-  border-radius: 52px;
-
+  margin: 0 0 0.5rem 0;
+  padding-bottom: 1rem;
 }
 
 .snippet__hero {
@@ -40,10 +38,13 @@
 }
 
 .portfolioItem {
+  max-width: 2000px;
+  margin: 0 auto;
+  width: 80%;
   padding: 1rem;
   margin-bottom: 3rem;
-  border-radius: 41px;
-  background: #d8eefe;
+  border-radius: 25px;
+  background: $primary-1;
   box-shadow:  14px -14px 0px #bed1e0,
                -14px 14px 0px #f2ffff;
 
@@ -99,12 +100,11 @@
 
 @media (min-width:700px) {
 
-  .portfolio-snippet {
-    width: 60%;
-  }
+ 
   .portfolioItem {
+    width: 60%;
     h2 {
-    
+     
       font-size: 3vw;
    
   }

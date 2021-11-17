@@ -1,9 +1,15 @@
 @import "global";
 
 .about-snippet {
+  
   // ADD WICKED NEUMORPHIX BOX SHADOW
+ 
+  border-radius: 13px;
+  background: #fffffe;
+  box-shadow:  -29px 20px 31px #d9d9d8,
+               29px -20px 31px #ffffff;
   text-align: center;
-  margin: 0 auto;
+  margin: 3rem auto;
   max-width: 2000px;
   width: 85%;
   padding: 1rem;
@@ -11,6 +17,9 @@
 
   h2 {
     font-size: clamp(2rem, 3vw, 4rem);
+  }
+  p {
+    margin-top: 1rem;
   }
 }
 

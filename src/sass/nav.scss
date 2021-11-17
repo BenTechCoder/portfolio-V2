@@ -1,6 +1,6 @@
 @import "global";
 .nav {
-  background-color: $primary-2;
+  background-color: $primary-1;
   padding: 0.3rem;
 }
 
@@ -19,6 +19,7 @@
   color: $text;
 }
 
-.nav-items a:hover {
-  color: black;
+.nav-items a:hover, a:focus {
+  color: $link-2;
 }
+

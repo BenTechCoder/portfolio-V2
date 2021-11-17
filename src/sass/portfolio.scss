@@ -31,6 +31,8 @@
   width: 90%;
   max-width: 2000px;
   color: $primary-2;
+  border-radius: 52px;
+
 }
 
 .snippet__hero {
@@ -38,13 +40,16 @@
 }
 
 .portfolioItem {
-
   padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 41px;
+  background: #d8eefe;
+  box-shadow:  14px -14px 0px #bed1e0,
+               -14px 14px 0px #f2ffff;
 
   a {
-    color: $primary-2;
+    
+    color: $link-2;
     text-decoration: none;
   }
 
@@ -84,9 +89,10 @@
         
     }
   a:hover {
+    color: $primary-1;
       padding: 0.5rem;
       border-radius: 1rem;
-      background-color: $primary-1;
+      background-color: $btn-1;
   }
 
 }
@@ -94,7 +100,7 @@
 @media (min-width:700px) {
 
   .portfolio-snippet {
-    width: 70%;
+    width: 60%;
   }
   .portfolioItem {
     h2 {

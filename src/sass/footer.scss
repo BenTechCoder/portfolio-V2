@@ -1,6 +1,8 @@
 @import "global";
 
 .footer-container {
+  background-image: url("/assets/general-assets/Colored-Shapes.svg");
+  background-size:contain;
   padding: 0.5rem;
   margin-top: auto;
   background-color: $primary-2;

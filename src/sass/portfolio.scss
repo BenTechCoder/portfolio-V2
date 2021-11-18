@@ -41,6 +41,10 @@
 }
 
 .portfolio-snippet {
+  background-image: url("/assets/general-assets/Colored-Shapes.svg");
+  background-repeat: no-repeat space;
+  background-size: contain;
+  
     font-weight: 700;
   text-align: center;
   background-color: $primary-2;

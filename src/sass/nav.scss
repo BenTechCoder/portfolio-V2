@@ -2,6 +2,7 @@
 .nav {
   background-image: url("/assets/general-assets/Colored-Shapes.svg");
   background-size:contain;
+  background-repeat: space no-repeat;
   background-color: $primary-1;
   padding: 0.3rem;
 }
@@ -14,6 +15,7 @@
   flex-grow: 1;
   flex-wrap: wrap;
   gap: 10%;
+
 }
 
 .nav-items a {

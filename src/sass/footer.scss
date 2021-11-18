@@ -3,6 +3,7 @@
 .footer-container {
   background-image: url("/assets/general-assets/Colored-Shapes.svg");
   background-size:contain;
+  background-repeat: space no-repeat;
   padding: 0.5rem;
   margin-top: auto;
   background-color: $primary-2;

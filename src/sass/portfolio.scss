@@ -16,6 +16,22 @@
   }
 }
 
+
+@keyframes grow {
+  0% {
+    padding: 0rem;
+  }
+
+  50% {
+    padding: 0.2rem;
+  }
+
+  100% {
+    padding: 0.5rem;
+  }
+}
+
+
 .down-arrow {
   display: inline-block;
 
@@ -89,9 +105,12 @@
         text-decoration: none;
         
     }
-  a:hover {
+  a:hover, a:focus {
     color: $primary-1;
-      padding: 0.5rem;
+ animation-name: grow;
+ animation-duration: 2s;
+animation-fill-mode: forwards;
+      // padding: 0.5rem;
       border-radius: 1rem;
       background-color: $btn-1;
   }

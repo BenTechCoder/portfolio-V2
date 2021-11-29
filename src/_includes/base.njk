@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- ADD SEO VIA FRONT MATTER -->
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
@@ -27,14 +27,14 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
   </head>
 
- {% include "header.njk" %}
+  {% include "header.njk" %}
 
   <body>
     <main>
       {{ content | safe }}
     </main>
 
-{% include "contact-form.njk" %}
+    {% include "contact-form.njk" %}
 
     <footer class="footer-container">
       <div class="credit">
@@ -68,5 +68,19 @@
         </div>
       </div>
     </footer>
+    <script defer>
+      const navToggle = document.querySelector(".mobile-nav-toggle");
+      const nav = document.querySelector(".nav");
+      navToggle.addEventListener("click", function () {
+        const isVisible = nav.getAttribute("data-visible");
+        if (isVisible === "false") {
+          nav.setAttribute("data-visible", true);
+          navToggle.setAttribute("aria-expanded", true)
+        } else if (isVisible === "true") {
+          nav.setAttribute("data-visible", false);
+          navToggle.setAttribute("aria-expanded", false)
+        }
+      });
+    </script>
   </body>
 </html>

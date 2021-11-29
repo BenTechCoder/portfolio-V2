@@ -6,6 +6,7 @@
 
     <!-- ADD SEO VIA FRONT MATTER -->
     <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
     <link
       rel="apple-touch-icon"
@@ -75,10 +76,10 @@
         const isVisible = nav.getAttribute("data-visible");
         if (isVisible === "false") {
           nav.setAttribute("data-visible", true);
-          navToggle.setAttribute("aria-expanded", true)
+          navToggle.setAttribute("aria-expanded", true);
         } else if (isVisible === "true") {
           nav.setAttribute("data-visible", false);
-          navToggle.setAttribute("aria-expanded", false)
+          navToggle.setAttribute("aria-expanded", false);
         }
       });
     </script>

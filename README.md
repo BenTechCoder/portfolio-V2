@@ -1,12 +1,9 @@
-![logo](https://repository-images.githubusercontent.com/302921248/58478900-0adf-11eb-8f0b-74be58a898ef)
+![logo](https://raw.githubusercontent.com/BenTechCoder/portfolio-V2/71712a7d87f7768aa6d357f9ed77172885ba92f9/src/assets/general-assets/LogoWithText.svg)
 
-# 11ty Sass Skeleton
+# The profolio of Benjamin Leborn
+Built with 11ty and Sass.
 
-Featuring absolutely nothing beyond a base HTML5 template and the essential setup to watch and compile your Sass alongside 11ty.
-
-Includes minifiying and autoprefixing of styles `postbuild`.
-
-<small>Created by [@5t3ph](https://twitter.com/5t3ph)</small>
+Also built with the amazing Sass 11ty Started from Stephanie Eckles. 
 
 ## Development Scripts
 

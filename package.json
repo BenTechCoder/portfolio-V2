@@ -11,7 +11,7 @@
     "build:eleventy": "eleventy",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:sass build:eleventy build:npm run social-images"
+    "build": "npm-run-all build:sass build:eleventy build:eleventy social-images"
   },
   "repository": {
     "type": "git",

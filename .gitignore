@@ -4,7 +4,7 @@ node_modules
 # build artefacts
 public
 css
-social
+/src/pagesjson.njk
 
 # secrets and errors
 .env

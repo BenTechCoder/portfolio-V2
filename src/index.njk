@@ -1,12 +1,15 @@
 ---
 layout: base.njk
-title: Benjamin Lebron - Student Web Developer
-description: Hey There! I'm Freelance Web developer Benjamin Lebron. I Create fast and beautiful Websites for small Business. Check out my website to see my work, learn more about me, or just say hi! :)
+pageTitle: "Benjamin Lebron - Web Developer"
+pageDescription: "Hey There! I'm Freelance Web developer Benjamin Lebron. I Create fast and beautiful Websites for small Business. Check out my website to see my work, learn more about me, or just say hi! :)"
 ---
 
 <section class="hero-section">
   <div class="hero-img">
-    <img src="assets/general-assets/LogoNoText.svg" alt="Hair With Glasses logo" />
+    <img
+      src="assets/general-assets/LogoNoText.svg"
+      alt="Hair With Glasses logo"
+    />
   </div>
   <div class="hero__text">
     <h2>Hello There 👋 I'm <span id="hero-span">Ben</span></h2>
@@ -15,13 +18,13 @@ description: Hey There! I'm Freelance Web developer Benjamin Lebron. I Create fa
 </section>
 <section class="portfolio-snippet" id="projects">
   <div class="hero__text snippet__hero">
-    <h2>I make Amazing Websites <p class="down-arrow">&darr;</p></h2>
+    <h2>
+      I make Amazing Websites
+      <p class="down-arrow">&darr;</p>
+    </h2>
   </div>
-  {% for portfolioitem in collections.portfolioitem | reverse %}
-    {% include "portfolio-snippet.njk" %} 
-  {% endfor %}
-   
-</section> 
+  {% for portfolioitem in collections.portfolioitem | reverse %} {% include
+  "portfolio-snippet.njk" %} {% endfor %}
+</section>
 
-  {% include "about-snippet.njk" %}
-
+{% include "about-snippet.njk" %}

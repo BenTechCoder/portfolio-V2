@@ -8,4 +8,4 @@
 
   # Default build command.
   command = "AWS_LAMBDA_FUNCTION_NAME=trickpuppeteer npm run build"
-  publish = "/opt/build/repo/public"
+ 

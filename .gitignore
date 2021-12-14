@@ -4,6 +4,7 @@ node_modules
 # build artefacts
 public
 css
+social
 
 # secrets and errors
 .env

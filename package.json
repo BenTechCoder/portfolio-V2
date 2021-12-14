@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "social-images": "eleventy-social-images --siteName 'benjaminlebron.com' --outputDir public --dataFile social/pages.json",
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
     "watch:eleventy": "eleventy --serve",
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "build:eleventy": "eleventy",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:sass build:eleventy"
+    "build": "npm-run-all build:sass build:eleventy social-images"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11tyrocks/eleventy-plugin-social-images": "^0.4.0",
     "autoprefixer": "^10.3.1",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.7",

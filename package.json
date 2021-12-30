@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "social-images": "eleventy-social-images --siteName 'benjaminlebron.com' --outputDir public --dataFile social/pages.json --theme minimal",
+    "social-images": "eleventy-social-images --siteName 'benjaminlebron.com' --outputDir public --dataFile social/pages.json --theme [minimal]",
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
     "watch:eleventy": "eleventy --serve",
     "build:sass": "sass  --no-source-map src/sass:public/css",

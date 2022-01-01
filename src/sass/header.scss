@@ -47,11 +47,9 @@ a:focus {
   }
 
   .nav[data-visible="true"] {
-    display: block;
    max-height: 500px;
     transform: translateY(0);
     transition: transform 0.4s ease-in;
-    background-color: rebeccapurple;
   }
 
   .mobile-nav-toggle {

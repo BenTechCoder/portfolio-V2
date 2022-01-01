@@ -1,6 +1,6 @@
 ---
 title: Rightaboutshop.com
-image: \assets\general-assets\Screenshot 2021-11-05 160408.webp
+image: \assets\general-assets\Screenshot 2021-12-31 200417.webp
 img-caption: Carpentry website
 description: Rightaboutshop is an 11ty Website custom built for a local carpenter.
 source: https://www.rightaboutshop.com/

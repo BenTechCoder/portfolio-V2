@@ -1,11 +1,12 @@
-@import "global";
-@import "reset";
-@import "header";
-@import "hero";
-@import "footer";
-@import "portfolio";
-@import "about";
-@import "form";
+@use "global";
+@use "reset";
+@use "header";
+@use "hero";
+@use "footer";
+@use "portfolio";
+@use "about";
+@use "form";
+@use "typography";
 
 
 body {

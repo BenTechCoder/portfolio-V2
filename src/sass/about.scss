@@ -15,9 +15,7 @@
   padding: 1rem;
   border-radius: 1rem;
 
-  h2 {
-    font-size: clamp(2rem, 3vw, 4rem);
-  }
+
   p {
     margin-top: 1rem;
   }
@@ -26,7 +24,7 @@
 .about-container {
   p {
     margin-bottom: 0.5rem;
-    font-size: clamp(1.5rem, 2vw, 3rem);
+
   }
 
   img {

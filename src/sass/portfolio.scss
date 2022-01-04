@@ -74,10 +74,10 @@
     text-decoration: none;
   }
 
- h2 {
+ h3 {
    text-decoration: underline;
    word-wrap: break-word;
-     font-size: 1.3rem;
+   
      margin: 0.5rem;
  }
 
@@ -85,7 +85,7 @@
    text-align: center;
    margin-top: 0.5rem;
    margin-bottom: 0.5rem;
-     font-size: $font-size-small;
+
     //  
     
 
@@ -121,16 +121,11 @@ animation-fill-mode: forwards;
 
 }
 
+
 @media (min-width:700px) {
 
- 
   .portfolioItem {
     width: 60%;
-    h2 {
-     
-      font-size: 3vw;
-   
-  }
   }
 }
 

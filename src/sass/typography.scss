@@ -1,0 +1,13 @@
+h2 {
+    font-size: clamp(2rem, 3vw, 4rem);
+  }
+
+  button {
+    font-size: $font-size-small;
+}
+
+#hero-span {
+    font-size: clamp(3rem, 4vw, 6rem);
+    color: $link-1;
+    font-family: $Yellowtail;
+  }

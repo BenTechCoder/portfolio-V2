@@ -5,7 +5,7 @@
     margin: 1rem auto;
     label {
        color: $header;
-        font-size: $font-size-small;
+ 
     }
 
     input {
@@ -21,14 +21,11 @@
         margin-bottom: 1rem;
     }
 
-    button {
-        font-size: $font-size-small;
-    }
+    
 }
 
 .form-head {
     text-align: center;
-    font-size: clamp(1.3rem, 2vw, 3rem);
     
 }
 

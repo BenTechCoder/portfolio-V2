@@ -14,11 +14,18 @@ $body-font: 'open_sans', arial;
 
 //clamp(2rem, 3vw, 5rem)
 h1 {
-    font-size: clamp(2rem, 4vw, 5rem);
+    font-size: clamp(3rem, 4vw, 6rem);
 }
 h2 {
    
-    font-size: clamp(1.6rem, 2.5vw, 4rem);
+    font-size: clamp(2.5rem, 2.5vw, 4.5rem);
+ }
+
+ h3 {
+font-size: 2rem;
+ }
+ h4 {
+   font-size: 1.35rem;
  }
 
 a {
@@ -30,7 +37,13 @@ a {
 p {
     font-family: $body-font;
   font-size:clamp(1rem, 1.3rem, 2rem);
-  color: $text;
+
+}
+
+li {
+  font-family: $body-font;
+  font-size:clamp(1rem, 1.3rem, 2rem);
+
 }
 
 h1,

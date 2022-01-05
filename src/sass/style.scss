@@ -11,16 +11,12 @@
 
 
 body {
-  font-family: $body-font;
-  background-color: $primary-1;
+
+  background-color: primary-1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 
-}
-
-h1,h2,h3,h4,h5 {
-  font-family: $header-font;
 }
 
 /* Optional */

@@ -1,63 +1,57 @@
-@import "global";
+@use "global" as *;
 
 .contact-form {
-    width: 80%;
-    margin: 1rem auto;
-    label {
-       color: $header;
- 
-    }
+  width: 80%;
+  margin: 1rem auto;
+  label {
+    color: $header;
+  }
 
-    input {
-        margin-bottom: 1rem;
-        padding: 1rem;
-    }
+  input {
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
 
-    ::placeholder {
-        color: $header;
-    }
+  ::placeholder {
+    color: $header;
+  }
 
-    textarea {
-        margin-bottom: 1rem;
-    }
-
-    
+  textarea {
+    margin-bottom: 1rem;
+  }
 }
 
 .form-head {
-    text-align: center;
-    
+  text-align: center;
 }
 
 .form-group {
-  
-     display: flex;
-     flex-direction: column;
- }
+  display: flex;
+  flex-direction: column;
+}
 
- .submit-btn {
-     padding: 1rem;
-     background-color: $btn-1;
-     color: $btn-text-1;
- }
+.submit-btn {
+  padding: 1rem;
+  background-color: $btn-1;
+  color: $btn-text-1;
+}
 
 @media (min-width: 600px) {
-    .contact-form {
-        margin: 1rem auto;
-        max-width: 1500px;
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center; 
-        gap: 1rem;
-    }
-    
-    .form-head {
-        width: 30%;
-    }
-    
-    .form-group {
-       width: 60%;
-    
-    }
+  .contact-form {
+    margin: 1rem auto;
+    max-width: 1500px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .form-head {
+    width: 30%;
+  }
+
+  .form-group {
+    width: 60%;
+  }
 }

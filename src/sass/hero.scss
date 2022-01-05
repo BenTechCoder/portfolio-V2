@@ -1,4 +1,4 @@
-@import "global";
+@use "global" as *;
 
 .hero-section {
   display: flex;
@@ -18,12 +18,4 @@
     width: 80%;
   }
 }
-
-.hero__text {
-  text-align: center;
-  font-size: clamp(1.2rem, 2vw, 4rem);
-  margin: 0 auto;
-  padding: 1rem;
-}
-
 

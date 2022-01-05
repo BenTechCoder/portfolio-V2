@@ -2,19 +2,55 @@
 // TODO: use fonts in fonts folder and set up general typography
 
 @use "global" as *;
+
+
+
+$header-font: 'nuni', sans-serif;
+$body-font: 'open_sans', arial;
+
+
+
+//clamp(2rem, 3vw, 5rem)
+h1 {
+    font-size: clamp(2rem, 4vw, 5rem);
+}
 h2 {
-    font-size: clamp(2rem, 3vw, 4rem);
-  }
+   
+    font-size: clamp(1.6rem, 2.5vw, 4rem);
+ }
 
-  button {
-
+a {
+    font-family: $body-font;
+    font-size:clamp(1rem, 1.3rem, 2rem);
+    font-weight: 700;
+    color: $text;
 }
-h1,h2,h3,h4,h5 {
+p {
+    font-family: $body-font;
+  font-size:clamp(1rem, 1.3rem, 2rem);
+  color: $text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
   font-family: $header-font;
+  color: $header;
+ 
 }
 
-#hero-span {
-    font-size: clamp(3rem, 4vw, 6rem);
-    color: $link-1;
-    font-family: $Yellowtail;
-  }
+
+.hero-text{
+  
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.hero-em {
+  font-size: clamp(2.5rem, 3.1vw, 5rem);
+  color: $link-1;
+  font-family: cursive;
+}

@@ -1,4 +1,4 @@
-@import "global";
+@use "global" as *;
 
 @keyframes bounce {
   0%,
@@ -16,7 +16,6 @@
   }
 }
 
-
 @keyframes grow {
   0% {
     padding: 0rem;
@@ -31,7 +30,6 @@
   }
 }
 
-
 .down-arrow {
   display: inline-block;
 
@@ -44,8 +42,8 @@
   background-image: url("/assets/general-assets/Colored-Shapes.svg");
   background-repeat: no-repeat space;
   background-size: contain;
-  
-    font-weight: 700;
+
+  font-weight: 700;
   text-align: center;
   background-color: $primary-2;
   color: $primary-2;
@@ -54,7 +52,7 @@
 }
 
 .snippet__hero {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .portfolioItem {
@@ -65,67 +63,58 @@
   margin-bottom: 3rem;
   border-radius: 25px;
   background: $primary-1;
-  box-shadow:  14px -14px 0px #bed1e0,
-               -14px 14px 0px #f2ffff;
+  box-shadow: 14px -14px 0px #bed1e0, -14px 14px 0px #f2ffff;
 
   a {
-    
     color: $link-2;
     text-decoration: none;
   }
 
- h3 {
-   text-decoration: underline;
-   word-wrap: break-word;
-   
-     margin: 0.5rem;
- }
+  h3 {
+    text-decoration: underline;
+    word-wrap: break-word;
 
- p {
-   text-align: center;
-   margin-top: 0.5rem;
-   margin-bottom: 0.5rem;
+    margin: 0.5rem;
+  }
 
-    //  
-    
+  p {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 
-}
+    //
+  }
 }
 
 .btn-area {
- 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 
-   img{
-       margin: 1rem auto;
-       width: 90%;
-   }
-
-    a {
-        text-decoration: none;
-        
-    }
-  a:hover, a:focus {
-    color: $primary-1;
- animation-name: grow;
- animation-duration: 2s;
-animation-fill-mode: forwards;
-      // padding: 0.5rem;
-      border-radius: 1rem;
-      background-color: $btn-1;
+  img {
+    margin: 1rem auto;
+    width: 90%;
   }
 
+  a {
+    text-decoration: none;
+  }
+  a:hover,
+  a:focus {
+    color: $primary-1;
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    // padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: $btn-1;
+  }
 }
 
-
-@media (min-width:700px) {
-
+@media (min-width: 700px) {
   .portfolioItem {
     width: 60%;
   }
 }
-

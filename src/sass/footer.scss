@@ -1,8 +1,8 @@
-@import "global";
+@use "global" as *;
 
 .footer-container {
   background-image: url("/assets/general-assets/Colored-Shapes.svg");
-  background-size:contain;
+  background-size: contain;
   background-repeat: space no-repeat;
   padding: 1rem;
   margin-top: auto;

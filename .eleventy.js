@@ -4,6 +4,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(socialImages);
 
   eleventyConfig.addWatchTarget("./src/sass/");
+  
+  eleventyConfig.addWatchTarget("./src/fonts/");
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 

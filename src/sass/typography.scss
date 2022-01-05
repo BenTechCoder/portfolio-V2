@@ -1,9 +1,16 @@
+
+// TODO: use fonts in fonts folder and set up general typography
+
+@use "global" as *;
 h2 {
     font-size: clamp(2rem, 3vw, 4rem);
   }
 
   button {
-    font-size: $font-size-small;
+
+}
+h1,h2,h3,h4,h5 {
+  font-family: $header-font;
 }
 
 #hero-span {

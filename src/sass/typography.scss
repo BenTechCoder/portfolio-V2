@@ -1,6 +1,8 @@
 
-// TODO: use fonts in fonts folder and set up general typography
-
+/* TODO: 
+1. add font sizes for h3, h4, h5, h6
+2. add fon sizes for button
+*/
 @use "global" as *;
 
 
@@ -37,6 +39,8 @@ h3,
 h4,
 h5,
 h6{
+    font-weight: 778;
+    text-shadow: 1px 1px;
   font-family: $header-font;
   color: $header;
  
@@ -44,7 +48,7 @@ h6{
 
 
 .hero-text{
-  
+
     text-align: center;
     margin: 0 auto;
     padding: 1rem;
@@ -52,5 +56,5 @@ h6{
 .hero-em {
   font-size: clamp(2.5rem, 3.1vw, 5rem);
   color: $link-1;
-  font-family: cursive;
+
 }

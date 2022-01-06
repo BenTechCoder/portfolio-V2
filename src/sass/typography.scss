@@ -7,7 +7,7 @@
 
 
 
-$header-font: 'nuni', sans-serif;
+$header-font: 'poppins', sans-serif;
 $body-font: 'open_sans', arial;
 
 
@@ -46,14 +46,17 @@ li {
 
 }
 
+form {
+  font-family: $body-font;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6{
-    font-weight: 778;
-    text-shadow: 1px 1px;
+    font-weight: bold;
   font-family: $header-font;
   color: $header;
  
@@ -61,11 +64,25 @@ h6{
 
 
 .hero-text{
-
+font-style: italic;
     text-align: center;
     margin: 0 auto;
     padding: 1rem;
 }
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em strong {
+  font-weight: bold;
+  font-style: italic;
+}
+
 .hero-em {
   font-size: clamp(2.5rem, 3.1vw, 5rem);
   color: $link-1;

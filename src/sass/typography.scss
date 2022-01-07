@@ -35,19 +35,21 @@ a {
     color: $text;
 }
 p {
-
+  color: $text;
     font-family: $body-font;
   font-size:clamp(1rem, 1.3rem, 2rem);
 
 }
 
 li {
+  color: $text;
   font-family: $body-font;
   font-size:clamp(1rem, 1.3rem, 2rem);
 
 }
 
 form {
+   color: $text;
   font-family: $body-font;
 }
 

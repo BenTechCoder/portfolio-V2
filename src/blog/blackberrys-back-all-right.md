@@ -1,6 +1,6 @@
 ---
 title: 'BlackBerry's back, all right!'
-date: 2020-08-21T13:51:00.005-07:00
+date: 2021-01-27T14:45:00.003-08:00
 draft: false
 url: /2020/08/blackberrys-back-all-right.html
 tags: 

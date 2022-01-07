@@ -1,5 +1,5 @@
 ---
-title: 'Dear Google: please don''t make me buy an iPad'
+title: 'Dear Google: please don't make me buy an iPad'
 date: 2020-03-27T16:28:00.001-07:00
 draft: false
 url: /2020/03/dear-google-please-dont-make-me-buy-ipad.html

@@ -1,5 +1,5 @@
 ---
-title: 'You DON''T need AirPods! | Jabra Elite 75T vs AirPods Pros'
+title: 'You DON'T need AirPods! | Jabra Elite 75T vs AirPods Pros'
 date: 2021-06-30T07:51:00.001-07:00
 draft: false
 url: /2021/06/you-dont-need-airpods-jabra-elite-75t.html

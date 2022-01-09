@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.hero-section {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,12 +10,23 @@
   background-color: $primary-2;
 }
 
-.hero-img {
+.hero__img {
   width: 40%;
 }
+
+.hero__text {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero__text--em {
+  color: $link-1;
+}
+
+
 @media (max-width: 500px) {
-  .hero-img {
+  .hero__img {
     width: 80%;
   }
 }
-

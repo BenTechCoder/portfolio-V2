@@ -1,8 +1,6 @@
 @use "global" as *;
 
-.about__snippet {
-
-
+.about-snippet {
   border-radius: 13px;
   background: #fffffe;
   box-shadow: -29px 20px 31px #d9d9d8, 29px -20px 31px #ffffff;
@@ -18,7 +16,7 @@
   }
 }
 
-.about-container {
+.about-snippet__container {
   p {
     margin-bottom: 0.5rem;
   }

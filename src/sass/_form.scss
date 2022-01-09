@@ -21,16 +21,14 @@
   }
 }
 
-.form-head {
+.contact-form__form-head {
   text-align: center;
 }
 
-.form-group {
+.contact-form__form-group {
   display: flex;
   flex-direction: column;
 }
-
-
 
 @media (min-width: 600px) {
   .contact-form {
@@ -43,11 +41,11 @@
     gap: 1rem;
   }
 
-  .form-head {
+  .contact-form__form-head{
     width: 30%;
   }
 
-  .form-group {
+  .contact-form__form-group {
     width: 60%;
   }
 }

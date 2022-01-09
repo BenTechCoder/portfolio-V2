@@ -47,7 +47,7 @@
 
   font-weight: 700;
   text-align: center;
-  background-color: $primary-2;
+  background-color: $secondary;
   margin: 0 0 0.5rem 0;
   padding-bottom: 1rem;
 }
@@ -65,7 +65,7 @@
   padding: 1rem;
   margin-bottom: 3rem;
   border-radius: 25px;
-  background: $primary-1;
+  background: $primary;
   box-shadow: 14px -14px 0px #bed1e0, -14px 14px 0px #f2ffff;
 
   a {
@@ -86,8 +86,6 @@
     margin-bottom: 0.5rem;
   }
 }
-
-
 
 @media (min-width: 700px) {
   .portfolio__item {

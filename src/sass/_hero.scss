@@ -7,7 +7,7 @@
   color: $text;
   background-image: url("/assets/general-assets/Animated-Shape.svg");
   background-size: cover;
-  background-color: $primary-2;
+  background-color: $secondary;
 }
 
 .hero__img {
@@ -23,7 +23,6 @@
 .hero__text--em {
   color: $link-1;
 }
-
 
 @media (max-width: 500px) {
   .hero__img {

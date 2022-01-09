@@ -79,3 +79,19 @@ em strong {
   font-style: italic;
 }
 
+ 
+hr {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border: 1px solid $secondary;
+}
+
+
+article {
+  max-width: 80ch;
+
+  > img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

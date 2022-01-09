@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.submit-btn {
+    padding: 1rem;
+    background-color: $btn-1;
+    color: $btn-text-1;
+  }

@@ -38,6 +38,8 @@
   animation-iteration-count: infinite;
 }
 
+//snippet
+
 .portfolio-snippet {
   background-image: url("/assets/general-assets/Colored-Shapes.svg");
   background-repeat: no-repeat space;
@@ -50,11 +52,13 @@
   padding-bottom: 1rem;
 }
 
-.snippet__hero {
+.portfolio-snippet__hero {
   margin-bottom: 1rem;
 }
 
-.portfolioItem {
+// ITEMs
+
+.portfolio__item {
   max-width: 2000px;
   margin: 0 auto;
   width: 80%;
@@ -80,40 +84,13 @@
     text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-
-    //
   }
 }
 
-.btn-area {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
 
-  img {
-    margin: 1rem auto;
-    width: 90%;
-  }
-
-  a {
-    text-decoration: none;
-  }
-  a:hover,
-  a:focus {
-    color: $primary-1;
-    animation-name: grow;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    // padding: 0.5rem;
-    border-radius: 1rem;
-    background-color: $btn-1;
-  }
-}
 
 @media (min-width: 700px) {
-  .portfolioItem {
+  .portfolio__item {
     width: 60%;
   }
 }

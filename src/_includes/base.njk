@@ -183,7 +183,7 @@
     </style>
   </head>
 
-  {% include "header.njk" %}
+  {% include "nav.njk" %}
 
   <body>
     <main>
@@ -227,7 +227,7 @@
       </div>
     </footer>
     <script defer>
-      const navToggle = document.querySelector(".mobile-nav-toggle");
+      const navToggle = document.querySelector(".nav-container__mobile_toggle");
       const nav = document.querySelector(".nav");
       navToggle.addEventListener("click", function () {
         const isVisible = nav.getAttribute("data-visible");

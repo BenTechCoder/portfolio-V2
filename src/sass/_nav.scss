@@ -1,5 +1,5 @@
 @use "global" as *;
-.header-nav {
+.nav-container {
   width: 100%;
   overflow-y: hidden;
   background-image: url("/assets/general-assets/Colored-Shapes.svg");
@@ -7,20 +7,20 @@
   background-repeat: repeat;
   background-color: primary-1;
 }
-.nav-logo {
+.nav-container__mobile_logo {
   max-width: 150px;
 }
 
-.nav-items a {
+.nav__bar_items a {
   margin-bottom: 1rem;
 }
 
-.nav-items a:hover,
+.nav__bar_items a:hover,
 a:focus {
   color: $link-2;
 }
 
-.nav-bar {
+.nav__bar {
   background-color: $primary-1;
   z-index: 8000;
   width: 100%;
@@ -31,7 +31,7 @@ a:focus {
 }
 
 @media (max-width: 600px) {
-  .mobile-flex {
+  .nav-container__mobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +48,7 @@ a:focus {
     transition: transform 0.4s ease-in;
   }
 
-  .mobile-nav-toggle {
+  .nav-container__mobile_toggle {
     border: none;
     z-index: 9999;
     width: 20%;
@@ -58,7 +58,7 @@ a:focus {
     aspect-ratio: 1;
   }
 
-  .mobile-nav-toggle[aria-expanded="true"] {
+  .nav-container__mobile_toggle[aria-expanded="true"] {
     background: url("/assets/general-assets/close.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ a:focus {
 }
 
 @media (min-width: 601px) {
-  .header-nav {
+  .nav-container {
     margin: 0 auto;
     width: 90%;
     display: flex;
@@ -74,10 +74,10 @@ a:focus {
     align-items: center;
   }
 
-  .mobile-nav-toggle {
+  .nav-container__mobile_toggle {
     display: none;
   }
-  .nav-bar {
+  .nav__bar {
     width: 100%;
     flex-direction: row;
     justify-content: center;

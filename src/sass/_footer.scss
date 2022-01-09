@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.footer-container {
+.footer {
   background-image: url("/assets/general-assets/Colored-Shapes.svg");
   background-size: contain;
   background-repeat: space no-repeat;
@@ -11,25 +11,25 @@
   font-weight: 700;
 }
 
-.footer-items {
+.footer__items {
   text-align: center;
 }
 
-.icon-list {
+.footer__icon-list {
   padding-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
-.icon {
+.footer__icon-list_icon {
   transition: transform 0.3s ease-out;
 }
-.icon:hover {
+.footer__icon-list_icon:hover {
   transform: translateY(8px);
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .icon:hover {
+  .footer__icon-list_icon:hover {
     transform: translateY(8px);
   }
 }

@@ -5,9 +5,9 @@
   background: #fffffe;
   box-shadow: -29px 20px 31px #d9d9d8, 29px -20px 31px #ffffff;
   text-align: center;
-  margin: 3rem auto;
-  max-width: 2000px;
-  width: 85%;
+
+
+
   padding: 1rem;
   border-radius: 1rem;
 
@@ -21,15 +21,9 @@
     margin-bottom: 0.5rem;
   }
 
-  img {
-    margin: 0 auto;
-    width: 90%;
-  }
+ 
   @media (min-width: 700px) {
-    img {
-      margin: 0;
-      width: 50%;
-    }
+   
     display: flex;
     flex-direction: row;
     align-items: center;

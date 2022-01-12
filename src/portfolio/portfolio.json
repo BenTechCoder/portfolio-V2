@@ -1,3 +1,4 @@
 {
-    "tags": "portfolioitem"
+    "tags": "portfolioitem",
+    "templateEngineOverride": "md, njk"
 }

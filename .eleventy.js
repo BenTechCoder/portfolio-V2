@@ -3,8 +3,10 @@ const Image = require("@11ty/eleventy-img");
 
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
-    widths: [300, 600, 1000, 1400],
-    formats: ["avif", "webp", "jpeg"]
+    widths: [300, 1000, 1400],
+    formats: ["webp", "jpeg"],
+    urlPath: "/assets/general-assets/",
+    outputDir: "./public/assets/general-assets/"
   });
 
   let imageAttributes = {
@@ -23,7 +25,7 @@ async function imageShortcode(src, alt, sizes) {
 module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
-  eleventyConfig.addJavaScriptFunction("image", imageShortcode);
+
   eleventyConfig.addPlugin(socialImages);
 
   eleventyConfig.addWatchTarget("./src/sass/");

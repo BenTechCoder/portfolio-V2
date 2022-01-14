@@ -1,0 +1,94 @@
+@use "global" as *;
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15);
+  }
+  60% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes grow {
+  0% {
+    padding: 0rem;
+  }
+
+  50% {
+    padding: 0.2rem;
+  }
+
+  100% {
+    padding: 0.5rem;
+  }
+}
+
+.down-arrow {
+  display: inline-block;
+
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+//snippet
+
+.portfolio-snippet {
+  background-image: url("/assets/general-assets/Colored-Shapes.svg");
+  background-repeat: no-repeat space;
+  background-size: contain;
+
+  font-weight: 700;
+  text-align: center;
+  background-color: $secondary;
+  margin: 0 0 0.5rem 0;
+  padding-bottom: 1rem;
+}
+
+.portfolio-snippet__hero {
+  margin-bottom: 1rem;
+}
+
+// ITEMs
+
+.portfolio__item {
+  max-width: 2000px;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 25px;
+  background: $primary;
+  box-shadow: 14px -14px 0px #bed1e0, -14px 14px 0px #f2ffff;
+
+  a {
+    color: $link-2;
+    text-decoration: none;
+  }
+
+  h3 {
+    text-decoration: underline;
+    word-wrap: break-word;
+
+    margin: 0.5rem;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .portfolio__item {
+    width: 60%;
+  }
+}

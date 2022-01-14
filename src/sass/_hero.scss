@@ -1,33 +1,31 @@
-@import "global";
+@use "global" as *;
 
-.hero-section {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: $text;
   background-image: url("/assets/general-assets/Animated-Shape.svg");
   background-size: cover;
-  background-color: $primary-2;
+  background-color: $secondary;
 }
 
-.hero-img {
+.hero__img {
   width: 40%;
-}
-@media (max-width: 500px) {
-  .hero-img {
-    width: 80%;
-  }
 }
 
 .hero__text {
   text-align: center;
-  font-size: clamp(1.2rem, 2vw, 4rem);
   margin: 0 auto;
   padding: 1rem;
 }
 
-#hero-span {
-  font-size: clamp(3rem, 4vw, 6rem);
+.hero__text--em {
   color: $link-1;
-  font-family: $Yellowtail;
+}
+
+@media (max-width: 500px) {
+  .hero__img {
+    width: 80%;
+  }
 }

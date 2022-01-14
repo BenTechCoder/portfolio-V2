@@ -1,0 +1,97 @@
+/* TODO: 
+1. add font sizes for h3, h4, h5, h6
+2. add fon sizes for button
+*/
+@use "global" as *;
+
+$header-font: "poppins", sans-serif;
+$body-font: "open_sans", arial;
+
+// add DEFUALT FONT SIZES TO ALL OF THE FONTS
+// do research on fluid type using css
+
+h1 {
+  font-size: 3rem;
+  font-size: clamp(3rem, 3.5vw, 5.5rem);
+}
+h2 {
+  font-size: 2rem;
+  font-size: clamp(2rem, 2.5vw, 4.5rem);
+}
+
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.35rem;
+}
+
+a {
+  font-family: $body-font;
+  font-size: clamp(1rem, 1.4rem, 3rem);
+  font-weight: 700;
+  color: $text;
+}
+p {
+  color: $text;
+  font-family: $body-font;
+  font-size: 1.4rem;
+  font-size: clamp(1rem, 1.4rem, 3rem);
+}
+
+li {
+  color: $text;
+  font-family: $body-font;
+ font-size: 1.4rem;
+  font-size: clamp(1rem, 1.4rem, 3rem);
+}
+
+form {
+  font-size: 1.4rem;
+  font-size: clamp(1rem, 1.4rem, 3rem);
+  color: $text;
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: $header-font;
+  color: $header;
+}
+
+
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em strong {
+  font-weight: bold;
+  font-style: italic;
+}
+
+ 
+hr {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border: 1px solid $secondary;
+}
+
+
+article {
+  max-width: 80ch;
+
+  > img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

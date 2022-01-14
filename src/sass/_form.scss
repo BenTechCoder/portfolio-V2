@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.contact-form {
+  width: 80%;
+  margin: 1rem auto;
+  label {
+    color: $header;
+  }
+
+  input {
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  ::placeholder {
+    color: $header;
+  }
+
+  textarea {
+    margin-bottom: 1rem;
+  }
+}
+
+.contact-form__form-head {
+  text-align: center;
+}
+
+.contact-form__form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .contact-form {
+    margin: 1rem auto;
+    max-width: 1500px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contact-form__form-head{
+    width: 30%;
+  }
+
+  .contact-form__form-group {
+    width: 60%;
+  }
+}

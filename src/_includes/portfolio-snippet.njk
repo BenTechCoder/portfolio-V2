@@ -1,12 +1,31 @@
-<div class="portfolioItem">
-<a href="{{portfolioitem.data.source}}">  <h2> {{ portfolioitem.data.title }} </h2></a>
-    <div class="img-cover">
-   <img src="{{ portfolioitem.data.image }}" alt="{{ portfolioitem.data.img-caption }}">
-    </div>
-     <p>{{ portfolioitem.data.description }}</p>
-   <div class="btn-area">
-     <a href="{{ portfolioitem.data.demo }}" rel="noopener" class="portfolio-btns"> <img src="\assets\icons\github.svg" alt="Github Link"> Source</a>
-     <a href="{{ portfolioitem.data.source }}" rel="noopener" class="portfolio-btns"><img src="\assets\icons\global.svg" alt="Live Site Link">Live site</a>
-   </div>
-     </div>
-   
+<div class="portfolio__item">
+  <a href="{{ portfolioitem.data.source }}">
+    <h3>{{ portfolioitem.data.title }}</h3></a
+  >
+
+  <div class="img-cover">
+
+    <img
+      src="{{ portfolioitem.data.image }}"
+      alt="{{ portfolioitem.data.description }}"
+    />
+    
+
+  </div>
+  <p>{{ portfolioitem.data.description }}</p>
+  <div class="btn--portfolio">
+    <a
+      href="{{ portfolioitem.data.demo }}"
+      rel="noopener"
+      class="portfolio-btns"
+    >
+      <img src="\assets\icons\github.svg" alt="Github Link" /> Source</a
+    >
+    <a
+      href="{{ portfolioitem.data.source }}"
+      rel="noopener"
+      class="portfolio-btns"
+      ><img src="\assets\icons\global.svg" alt="Live Site Link" />Live site</a
+    >
+  </div>
+</div>

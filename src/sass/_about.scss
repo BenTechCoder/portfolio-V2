@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.about-snippet {
+  border-radius: 13px;
+  background: #fffffe;
+  box-shadow: -29px 20px 31px #d9d9d8, 29px -20px 31px #ffffff;
+  text-align: center;
+
+
+
+  padding: 1rem;
+  border-radius: 1rem;
+
+  p {
+    margin-top: 1rem;
+  }
+}
+
+.about-snippet__container {
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+ 
+  @media (min-width: 700px) {
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}

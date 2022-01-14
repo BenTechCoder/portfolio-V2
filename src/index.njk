@@ -4,25 +4,29 @@ pageTitle: "Benjamin Lebron - Web Developer"
 pageDescription: "Hey There! I'm Freelance Web developer Benjamin Lebron. I Create fast and beautiful Websites for small Business. Check out my website to see my work, learn more about me, or just say hi! :)"
 ---
 
-<section class="hero-section">
-  <div class="hero-img">
+<section class="hero">
+  <div class="hero__img">
     <img
-      src="assets/general-assets/LogoNoText.svg"
+      src="assets/general-assets/LogoNoTextOP.svg"
       alt="Hair With Glasses logo"
     />
+
+ 
+
   </div>
   <div class="hero__text">
-    <h1>Hey There 👋 I'm <span id="hero-span">Ben</span></h1>
+    <h1>Hey There 👋 I'm <span class="hero__text--em">Ben</span></h1>
     <h2>Your Friendly Neighborhood Web Dev</h2>
   </div>
 </section>
 <section class="portfolio-snippet" id="projects">
-  <div class="hero__text snippet__hero">
+  <div class="hero__text portfolio-snippet__hero">
     <h2>
       I make Amazing Websites
       <p class="down-arrow">&darr;</p>
     </h2>
   </div>
+ 
   {% for portfolioitem in collections.portfolioitem | reverse %} {% include
   "portfolio-snippet.njk" %} {% endfor %}
 </section>

@@ -2,11 +2,15 @@
   <a href="{{ portfolioitem.data.source }}">
     <h3>{{ portfolioitem.data.title }}</h3></a
   >
+
   <div class="img-cover">
+
     <img
       src="{{ portfolioitem.data.image }}"
-      alt="{{ portfolioitem.data.imgCaption }}"
+      alt="{{ portfolioitem.data.description }}"
     />
+    
+
   </div>
   <p>{{ portfolioitem.data.description }}</p>
   <div class="btn--portfolio">

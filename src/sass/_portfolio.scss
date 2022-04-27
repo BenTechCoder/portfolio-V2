@@ -32,7 +32,7 @@
 
 .down-arrow {
   display: inline-block;
-
+  rotate: 240deg;
   animation-name: bounce;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -41,6 +41,10 @@
 //snippet
 
 .portfolio-snippet {
+  display: block;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-auto-flow: dense;
   background-image: url("/assets/general-assets/Colored-Shapes.svg");
   background-repeat: no-repeat space;
   background-size: contain;
@@ -48,25 +52,27 @@
   font-weight: 700;
   text-align: center;
   background-color: $secondary;
-  margin: 0 0 0.5rem 0;
   padding-bottom: 1rem;
 }
 
 .portfolio-snippet__hero {
+  align-self: center;
   margin-bottom: 1rem;
 }
 
 // ITEMs
 
 .portfolio__item {
-  max-width: 2000px;
-  margin: 0 auto;
-  width: 80%;
+  max-width: 1000px;
+  margin: 0 2rem 3rem 2rem;
   padding: 1rem;
-  margin-bottom: 3rem;
-  border-radius: 25px;
+  border-radius: 10px;
   background: $primary;
   box-shadow: 14px -14px 0px #bed1e0, -14px 14px 0px #f2ffff;
+
+  img {
+    width: 100%;
+  }
 
   a {
     color: $link-1;
@@ -87,8 +93,11 @@
   }
 }
 
-@media (min-width: 700px) {
-  .portfolio__item {
-    width: 60%;
+@media screen and (max-width: 1000px) {
+  .portfolio-snippet {
+    display: block;
+  }
+  .down-arrow {
+    rotate: 0deg;
   }
 }

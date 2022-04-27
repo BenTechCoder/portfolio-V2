@@ -1,86 +1,19 @@
 @use "global" as *;
-.nav-container {
-  width: 100%;
-  overflow-y: hidden;
-  background-image: url("/assets/general-assets/Colored-Shapes.svg");
-  background-size: contain;
-  background-repeat: repeat;
-  background-color: primary-1;
-}
-.nav-container__mobile_logo {
-  max-width: 150px;
+
+.nav {
+ padding: 1rem;
 }
 
-.nav__bar_items a {
-  margin-bottom: 1rem;
-}
-
-.nav__bar_items a:hover,
-a:focus {
-  color: $link-2;
-}
-
-.nav__bar {
-  background-color: $primary;
-  z-index: 8000;
-  width: 100%;
+.nav-bar {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  flex-grow: 1;
   align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 600px) {
-  .nav-container__mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav {
-    max-height: 0;
-    transform: translateY(100%);
-  }
-
-  .nav[data-visible="true"] {
-    max-height: 500px;
-    transform: translateY(0);
-    transition: transform 0.4s ease-in;
-  }
-
-  .nav-container__mobile_toggle {
-    border: none;
-    z-index: 9999;
-    width: 20%;
-    background: url("/assets/general-assets/hamburger.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    aspect-ratio: 1;
-  }
-
-  .nav-container__mobile_toggle[aria-expanded="true"] {
-    background: url("/assets/general-assets/close.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+.nav__bar_items {
+  margin: 0.5rem;
 }
 
-@media (min-width: 601px) {
-  .nav-container {
-    margin: 0 auto;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-container__mobile_toggle {
-    display: none;
-  }
-  .nav__bar {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-  }
-}

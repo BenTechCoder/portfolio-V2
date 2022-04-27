@@ -70,6 +70,10 @@
   background: $primary;
   box-shadow: 14px -14px 0px #bed1e0, -14px 14px 0px #f2ffff;
 
+  img {
+    width: 100%;
+  }
+
   a {
     color: $link-1;
     text-decoration: none;

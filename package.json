@@ -20,7 +20,7 @@
   "author": "5t3ph",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0",
     "@11tyrocks/eleventy-plugin-social-images": "^0.4.0",
     "autoprefixer": "^10.4.2",
     "cheerio": "^1.0.0-rc.10",

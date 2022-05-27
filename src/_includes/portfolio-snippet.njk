@@ -5,11 +5,8 @@
 
   <div class="img-cover">
 
-    <img
-      src="{{ portfolioitem.data.image }}"
-      alt="{{ portfolioitem.data.description }}"
-    />
     
+   {% image portfolioitem.data.image, portfolioitem.data.image %}
 
   </div>
   <p>{{ portfolioitem.data.description }}</p>

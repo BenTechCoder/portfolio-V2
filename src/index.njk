@@ -27,8 +27,9 @@ pageDescription: "Hey There! I'm Freelance Web developer Benjamin Lebron. I Crea
     </h2>
   </div>
  
-  {% for portfolioitem in collections.portfolioitem | reverse %} {% include
-  "portfolio-snippet.njk" %} {% endfor %}
+  {% asyncEach portfolioitem in collections.portfolioitem | reverse %} 
+{% include "portfolio-snippet.njk" %}
+  {% endeach %}
 </section>
 
 {% include "about-snippet.njk" %}

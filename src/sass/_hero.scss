@@ -1,18 +1,28 @@
 @use "global" as *;
 
+
+
+
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   color: $text;
-  background-image: url("/assets/general-assets/Animated-Shape.svg");
-  background-size: cover;
-  background-color: $secondary;
-  padding-bottom: 3rem;
+  // background-image: url("/assets/general-assets/Animated-Shape.svg");
+  // background-size: cover;
+
+
+  p {
+    text-align: center;
+    color: $link-1;
+    font-weight: bold;
+  }
+
 }
 
 .hero__img {
-  width: 40%;
+  width: 10em;
 }
 
 .hero__text {
@@ -25,8 +35,8 @@
   color: $link-1;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .hero__img {
-    width: 80%;
+    width: 50%;
   }
 }

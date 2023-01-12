@@ -4,32 +4,74 @@ pageTitle: "Benjamin Lebron - Web Developer"
 pageDescription: "Hey There! I'm Freelance Web developer Benjamin Lebron. I Create fast and beautiful Websites for small Business. Check out my website to see my work, learn more about me, or just say hi! :)"
 ---
 
-<section class="hero">
-  <div class="hero__img">
-    <img
-      src="assets/general-assets/LogoNoTextOP.svg"
-      alt="Hair With Glasses logo"
-    />
-
- 
-
+<section class="bg-secondary">
+<div class="wrapper flow hero region">
+    <div class="hero__img">
+      <img
+        src="assets/general-assets/LogoNoTextOP.svg"
+        alt="Hair With Glasses logo"
+  />
+    </div>
+    <div>
+      <h1>Hey There 👋 I'm <span class="hero__text--em">Ben</span></h1>
+      <p>Your Friendly Neighborhood Web Dev</p>
+    </div>
   </div>
-  <div class="hero__text">
-    <h1>Hey There 👋 I'm <span class="hero__text--em">Ben</span></h1>
-    <h2>Your Friendly Neighborhood Web Dev</h2>
-  </div>
+</div>
 </section>
+
 <section class="portfolio-snippet" id="projects">
-  <div class="hero__text portfolio-snippet__hero">
-    <h2>
-      I make Amazing Websites
-      <p class="down-arrow">&darr;</p>
-    </h2>
+<div class="flow wrapper">
+  <div class="flow region">
+    <h2>I make Amazing Websites</h2>
+    <p>Here are some of my best below</p>
   </div>
- 
-  {% asyncEach portfolioitem in collections.portfolioitem | reverse %} 
-{% include "portfolio-snippet.njk" %}
-  {% endeach %}
+
+  <div class="grid">
+    {% asyncEach portfolioitem in collections.portfolioitem | reverse %}
+    {% include "portfolio-snippet.njk" %}
+    {% endeach %}
+  </div>
+</div>
 </section>
 
 {% include "about-snippet.njk" %}
+
+<hr>
+
+{% include "contact-form.njk" %}
+
+<footer class="footer">
+<div class="credit">
+        Icons made by
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+</div>
+<div class="footer__items">
+  <p>©{% year %} Benjamin Lebron</p>
+  <p>Find me on:</p>
+
+  <div class="footer-icon-container">
+    <div class="footer__icon-list">
+      <a
+              class="footer__icon-list_icon"
+              href="https://github.com/BenTechCoder"
+              rel="noopener"
+              target="_blank"
+            >
+        <img src="assets/icons/github.svg" alt="Github link"/>
+      </a>
+      <a
+              class="footer__icon-list_icon"
+              href="https://www.youtube.com/bentechcode"
+              rel="noopener"
+              target="_blank"
+            >
+        <img src="assets/icons/youtube.svg" alt="Github link"
+/></a>
+    </div>
+  </div>
+</div>
+</footer>

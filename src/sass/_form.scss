@@ -1,17 +1,13 @@
 @use "global" as *;
 
 .contact-form {
-  width: 80%;
-  margin: 1rem auto;
+  --switcher-space: var(--space-l);
   label {
     color: $header;
   }
-
   input {
-    margin-bottom: 1rem;
-    padding: 1rem;
+    padding: var(--space-xs);
   }
-
   ::placeholder {
     color: $header;
   }
@@ -21,31 +17,17 @@
   }
 }
 
-.contact-form__form-head {
-  text-align: center;
-}
 
 .contact-form__form-group {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (max-width:866px) {
   .contact-form {
-    margin: 1rem auto;
-    max-width: 1500px;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .contact-form__form-head{
-    width: 30%;
-  }
-
-  .contact-form__form-group {
-    width: 60%;
+    img {
+      display: none;
+    }
   }
 }

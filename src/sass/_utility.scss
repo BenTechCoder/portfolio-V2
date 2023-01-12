@@ -2,65 +2,162 @@
 @use "global" as *;
 
 .tdbc-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 120ch;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 1rem;
-  }
-  
-  .tdbc-column-container {
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 120ch;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem;
+}
 
-  
+.tdbc-column-container {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
+}
 
 ul.tdbc-column-container {
-    padding-left: 0;
-  }
-  
-  .tdbc-section {
-    width: 100%;
-  
-    &--padded {
-      padding-top: 10vh;
-      padding-bottom: 10vh;
-    }
-  
-   
-    *:last-child {
-      margin-bottom: 0;
-    }
-  }
-  
-  .tdbc-hero {
-    display: grid;
-    min-height: 40vh;
-    place-content: center;
+  padding-left: 0;
+}
+
+.tdbc-section {
+  width: 100%;
+
+  &--padded {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    text-align: center;
   }
-  
-  .tdbc-row {
-    display: grid;
-    grid-gap: 1rem;
-  
-    @media (min-width: 80ch) {
-      grid-auto-flow: column;
-      grid-auto-columns: max-content;
-    }
-  
-    &--center-content {
-      justify-content: center;
-    }
-  
-    &--center-alignitems {
-      align-items: center;
-    }
+
+  *:last-child {
+    margin-bottom: 0;
   }
-  
+}
+
+.tdbc-hero {
+  display: grid;
+  min-height: 40vh;
+  place-content: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  text-align: center;
+}
+
+.tdbc-row {
+  display: grid;
+  grid-gap: 1rem;
+
+  @media (min-width: 80ch) {
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+  }
+
+  &--center-content {
+    justify-content: center;
+  }
+
+  &--center-alignitems {
+    align-items: center;
+  }
+}
+
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--switcher-space, 2rem);
+}
+
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--switcher-switch, 50rem) - 100%) * 999);
+}
+
+.switcher > :nth-last-child(n + 5),
+.switcher > :nth-last-child(n + 5) ~ * {
+  flex-basis: 100%;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, 1rem);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+}
+
+.sidebar > :first-child {
+  flex-grow: 1;
+}
+
+.sidebar > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 40%;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--space-s);
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@supports (width: min(300px, 100%)) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  }
+}
+
+/**
+ * WRAPPER
+ * Sets a max width, adds a consistent gutter and horizontally
+ * centers the contents
+ */
+ .wrapper {
+  width: 90vw;
+  width: clamp(14rem, 90vw, 90rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-s);
+  padding-right: var(--space-s);
+  position: relative;
+}
+
+@media screen and (max-width: 320px) {
+  [data-wrapper="sans-padding"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.bg-secondary {
+  background-color: $secondary;
+}
+
+/**
+ * REGION 
+ * Add consistent vertical padding to create regions of content 
+ * Can either be configured by setting --region-space or use a default from the space scale
+ */
+ .region {
+  padding-top: var(--region-space, var(--space-xl-2xl));
+  padding-bottom: var(--region-space, var(--space-xl-2xl));
+}

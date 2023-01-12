@@ -41,31 +41,22 @@
 //snippet
 
 .portfolio-snippet {
-  display: block;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  grid-auto-flow: dense;
-  background-image: url("/assets/general-assets/Colored-Shapes.svg");
-  background-repeat: no-repeat space;
-  background-size: contain;
-
-  font-weight: 700;
-  text-align: center;
+  // background-image: url("/assets/general-assets/Colored-Shapes.svg");
+  // background-repeat: no-repeat space;
+  // background-size: contain;
+  font-weight: 700; 
   background-color: $secondary;
-  padding-bottom: 1rem;
-}
-
-.portfolio-snippet__hero {
-  align-self: center;
-  margin-bottom: 1rem;
 }
 
 // ITEMs
 
 .portfolio__item {
-  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  place-items: center center;
+  max-width: 100%;
   margin: 0 2rem 3rem 2rem;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 10px;
   background: $primary;
   box-shadow: 14px -14px 0px #bed1e0, -14px 14px 0px #f2ffff;
@@ -79,18 +70,6 @@
     text-decoration: none;
   }
 
-  h3 {
-    text-decoration: underline;
-    word-wrap: break-word;
-
-    margin: 0.5rem;
-  }
-
-  p {
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
 }
 
 @media screen and (max-width: 1000px) {
